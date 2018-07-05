@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Curso</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                font: 16px arial;
+            }
+            form {
+                margin: 20px;
+            }
+            form > fieldset > div {
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="form" method="POST" action="/Desafio/curso">
+            <fieldset>
+                <legend>Cadastro de Curso</legend>
+                <div>
+                    <label>Curso ID:</label>
+                    <input type="number" name="curso_id" autofocus required>
+                </div>
+                <div>
+                    <label>Curso:</label>
+                    <input type="text" name="nome_curso" required>
+                </div>
+                <div>
+                    <label>Turno:</label>
+                    <input type="text" name="turno" required>
+                </div>
+                <div>
+                    <label>Quantidade de estudantes:</label>
+                    <input type="number" name="qtde_estudantes" required>
+                </div>
+                <div>
+                    <label>Data de cadastro</label>
+                    <input type="date" name="data_cadastro" required>
+                </div>
+                <input type="submit" value="Inserir">
+            </fieldset>
+        </form>
+    </body>
+</html>
